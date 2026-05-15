@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vision-demos"
+version = "0.1.0"
+description = "Simple OpenCV demos: motion detection, bounding boxes, basic video capture."
+readme = "README.md"
+authors = [{ name = "Abhinav Anil" }]
+license = { text = "MIT" }
+requires-python = ">=3.8"
+dependencies = [
+    "opencv-python>=4.5.5.62",
+    "pandas>=1.3.0",
+    "bokeh>=2.4.0",
+    "numpy>=1.21.0",
+]
+
+[tool.black]
+line-length = 88
